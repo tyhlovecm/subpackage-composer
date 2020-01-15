@@ -1,0 +1,26 @@
+{
+    "name": "tongyh/subpackage-composer",
+    "description": "subpackage，and read apk ，ipa Package information.",  // 关于这个包的描述
+    "keywords": [   // 关于这个包的关键字
+        "php",
+        "subpackage"
+    ],
+    "authors": [
+        {
+            "name": "tongyh",
+            "email": "18572821456@163.com"
+        }
+    ],
+    "require": {
+    	"tufanbarisyildirim/php-apk-parser":"^2.0",
+    	"chumper/zipper": "^1.0",
+        "rodneyrehm/plist": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {  // 自动加载: 注意了, 这里有 psr-4, psr-2 多种规范, 并且,注意目录和命名空间
+        "psr-4": {
+          "SubpackageComposer\\": "src/"
+        }
+    }
+    
+}
